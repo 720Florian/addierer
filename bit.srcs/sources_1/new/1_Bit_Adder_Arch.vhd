@@ -33,7 +33,7 @@ entity One_Bit_Adder_Arch is
            
 end One_Bit_Adder_Arch;
 
-architecture arch_1_bit_adder of One_Bit_Adder_Arch is
+architecture Behavioral of One_Bit_Adder_Arch is
     -- Signale fuer den Addierer
     -- analog zu den Bausteinen in digital logic sim
     signal S1_xor : STD_LOGIC;
@@ -66,4 +66,4 @@ architecture arch_1_bit_adder of One_Bit_Adder_Arch is
             Carry_Out <= S2_and1 OR S3_and2;
         end if; 
     end process P1;
-end arch_1_bit_adder;
+end Behavioral;

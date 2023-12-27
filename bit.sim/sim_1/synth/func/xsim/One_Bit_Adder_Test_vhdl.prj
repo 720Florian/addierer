@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"One_Bit_Adder_Test_func_synth.vhd" \
+"../../../../../bit.srcs/sim_1/new/One_Bit_Adder_Test.vhd" \
+
+# Do not sort compile order
+nosort
