@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/vhdl/bit/bit.runs/synth_1/One_Bit_Adder_Arch.tcl"
+  variable script "D:/nils/dev/vhdl/addierer/bit.runs/synth_1/One_Bit_Adder_Arch.tcl"
   variable category "vivado_synth"
 }
 
@@ -76,15 +76,15 @@ create_project -in_memory -part xc7k70tfbv676-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/vhdl/bit/bit.cache/wt [current_project]
-set_property parent.project_path D:/vhdl/bit/bit.xpr [current_project]
+set_property webtalk.parent_dir D:/nils/dev/vhdl/addierer/bit.cache/wt [current_project]
+set_property parent.project_path D:/nils/dev/vhdl/addierer/bit.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo d:/vhdl/bit/bit.cache/ip [current_project]
+set_property ip_output_repo d:/nils/dev/vhdl/addierer/bit.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib D:/vhdl/bit/bit.srcs/sources_1/new/1_Bit_Adder_Arch.vhd
+read_vhdl -library xil_defaultlib D:/nils/dev/vhdl/addierer/bit.srcs/sources_1/new/1_Bit_Adder_Arch.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -94,10 +94,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/vhdl/bit/bit.srcs/constrs_1/new/constraints_clock.xdc
-set_property used_in_implementation false [get_files D:/vhdl/bit/bit.srcs/constrs_1/new/constraints_clock.xdc]
+read_xdc D:/nils/dev/vhdl/addierer/bit.srcs/constrs_1/new/constraints_clock.xdc
+set_property used_in_implementation false [get_files D:/nils/dev/vhdl/addierer/bit.srcs/constrs_1/new/constraints_clock.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
+
+read_checkpoint -auto_incremental -incremental D:/nils/dev/vhdl/addierer/bit.srcs/utils_1/imports/synth_1/One_Bit_Adder_Arch.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

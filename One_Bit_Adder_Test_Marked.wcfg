@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="One_Bit_Adder_Test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="One_Bit_Adder_Test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="8.340 ns"></ZoomStartTime>
+      <ZoomEndTime time="26.881 ns"></ZoomEndTime>
+      <Cursor1Time time="30.060 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="119"></NameColumnWidth>
+      <ValueColumnWidth column_width="65"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wave_markers>
+      <marker time="11500" label="" />
+      <marker time="13500" label="" />
+      <marker time="15500" label="" />
+      <marker time="17500" label="" />
+      <marker time="19500" label="" />
+      <marker time="21500" label="" />
+      <marker time="23500" label="" />
+      <marker time="25580" label="" />
+   </wave_markers>
+   <wvobject fp_name="/One_Bit_Adder_Test/Pin1" type="logic">
+      <obj_property name="ElementShortName">Pin1</obj_property>
+      <obj_property name="ObjectShortName">Pin1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/One_Bit_Adder_Test/Pin2" type="logic">
+      <obj_property name="ElementShortName">Pin2</obj_property>
+      <obj_property name="ObjectShortName">Pin2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/One_Bit_Adder_Test/Carry_IN" type="logic">
+      <obj_property name="ElementShortName">Carry_IN</obj_property>
+      <obj_property name="ObjectShortName">Carry_IN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/One_Bit_Adder_Test/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/One_Bit_Adder_Test/Clk" type="logic">
+      <obj_property name="ElementShortName">Clk</obj_property>
+      <obj_property name="ObjectShortName">Clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/One_Bit_Adder_Test/Sum_Out" type="logic">
+      <obj_property name="ElementShortName">Sum_Out</obj_property>
+      <obj_property name="ObjectShortName">Sum_Out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/One_Bit_Adder_Test/Carry_Out" type="logic">
+      <obj_property name="ElementShortName">Carry_Out</obj_property>
+      <obj_property name="ObjectShortName">Carry_Out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/One_Bit_Adder_Test/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+</wave_config>
