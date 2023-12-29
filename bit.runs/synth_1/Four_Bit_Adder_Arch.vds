@@ -1,18 +1,16 @@
-
-*** Running vivado
-    with args -log Four_Bit_Adder_Arch.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Four_Bit_Adder_Arch.tcl
-
-
-ECHO is off.
-ECHO is off.
-
-****** Vivado v2023.1 (64-bit)
-  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
-  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
-  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
-    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Dec 29 11:45:16 2023
+# Process ID: 6396
+# Current directory: D:/nils/dev/vhdl/addierer/bit.runs/synth_1
+# Command line: vivado.exe -log Four_Bit_Adder_Arch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Four_Bit_Adder_Arch.tcl
+# Log file: D:/nils/dev/vhdl/addierer/bit.runs/synth_1/Four_Bit_Adder_Arch.vds
+# Journal file: D:/nils/dev/vhdl/addierer/bit.runs/synth_1\vivado.jou
+# Running On: DESKTOP-8K4SORE, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 16, Host memory: 34289 MB
+#-----------------------------------------------------------
 source Four_Bit_Adder_Arch.tcl -notrace
 create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 454.559 ; gain = 162.895
 Command: read_checkpoint -auto_incremental -incremental D:/nils/dev/vhdl/addierer/bit.srcs/utils_1/imports/synth_1/One_Bit_Adder_Arch.dcp

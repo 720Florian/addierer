@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "D:/nils/dev/vhdl/addierer/bit.runs/synth_1/One_Bit_Adder_Arch.tcl"
+  variable script "D:/nils/dev/vhdl/addierer/bit.runs/synth_1/Four_Bit_Adder_Arch.tcl"
   variable category "vivado_synth"
 }
 
@@ -84,7 +84,10 @@ set_property ip_output_repo d:/nils/dev/vhdl/addierer/bit.cache/ip [current_proj
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib D:/nils/dev/vhdl/addierer/bit.srcs/sources_1/new/1_Bit_Adder_Arch.vhd
+read_vhdl -library xil_defaultlib {
+  D:/nils/dev/vhdl/addierer/bit.srcs/sources_1/new/1_Bit_Adder_Arch.vhd
+  D:/nils/dev/vhdl/addierer/bit.srcs/sources_1/new/4_Bit_Adder_Arch.vhd
+}
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -103,7 +106,7 @@ read_checkpoint -auto_incremental -incremental D:/nils/dev/vhdl/addierer/bit.src
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top One_Bit_Adder_Arch -part xc7k70tfbv676-1
+synth_design -top Four_Bit_Adder_Arch -part xc7k70tfbv676-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -113,10 +116,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef One_Bit_Adder_Arch.dcp
+write_checkpoint -force -noxdef Four_Bit_Adder_Arch.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file One_Bit_Adder_Arch_utilization_synth.rpt -pb One_Bit_Adder_Arch_utilization_synth.pb"
+create_report "synth_1_synth_report_utilization_0" "report_utilization -file Four_Bit_Adder_Arch_utilization_synth.rpt -pb Four_Bit_Adder_Arch_utilization_synth.pb"
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]

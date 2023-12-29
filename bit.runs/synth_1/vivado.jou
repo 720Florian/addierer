@@ -3,12 +3,12 @@
 # SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Wed Dec 27 20:35:23 2023
-# Process ID: 21548
+# Start of session at: Fri Dec 29 11:45:16 2023
+# Process ID: 6396
 # Current directory: D:/nils/dev/vhdl/addierer/bit.runs/synth_1
-# Command line: vivado.exe -log One_Bit_Adder_Arch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source One_Bit_Adder_Arch.tcl
-# Log file: D:/nils/dev/vhdl/addierer/bit.runs/synth_1/One_Bit_Adder_Arch.vds
+# Command line: vivado.exe -log Four_Bit_Adder_Arch.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Four_Bit_Adder_Arch.tcl
+# Log file: D:/nils/dev/vhdl/addierer/bit.runs/synth_1/Four_Bit_Adder_Arch.vds
 # Journal file: D:/nils/dev/vhdl/addierer/bit.runs/synth_1\vivado.jou
 # Running On: DESKTOP-8K4SORE, OS: Windows, CPU Frequency: 3593 MHz, CPU Physical cores: 16, Host memory: 34289 MB
 #-----------------------------------------------------------
-source One_Bit_Adder_Arch.tcl -notrace
+source Four_Bit_Adder_Arch.tcl -notrace

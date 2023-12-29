@@ -10,13 +10,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="8.340 ns"></ZoomStartTime>
-      <ZoomEndTime time="26.881 ns"></ZoomEndTime>
-      <Cursor1Time time="30.060 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="24.053 ns"></ZoomEndTime>
+      <Cursor1Time time="11.500 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="119"></NameColumnWidth>
-      <ValueColumnWidth column_width="65"></ValueColumnWidth>
+      <ValueColumnWidth column_width="61"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="8" />
    <wave_markers>
@@ -28,6 +28,7 @@
       <marker time="21500" label="" />
       <marker time="23500" label="" />
       <marker time="25580" label="" />
+      <marker time="9500" label="" />
    </wave_markers>
    <wvobject fp_name="/One_Bit_Adder_Test/Pin1" type="logic">
       <obj_property name="ElementShortName">Pin1</obj_property>

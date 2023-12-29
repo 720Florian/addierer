@@ -53,7 +53,7 @@ architecture Behavioral of One_Bit_Adder_Test is
     --Inputs
     signal Pin1 : STD_LOGIC := '0';
     signal Pin2 : STD_LOGIC := '0';
-    signal Carry_IN : STD_LOGIC := '0'; 
+    signal Carry_In : STD_LOGIC := '0'; 
     signal Reset : STD_LOGIC := '0';
     signal Clk : STD_LOGIC := '0';
     
@@ -66,7 +66,7 @@ begin
     uut: One_Bit_Adder_Arch PORT MAP (
         Pin1        => Pin1,
         Pin2        => Pin2,
-        Carry_IN    => Carry_IN,
+        Carry_In    => Carry_In,
         Sum_Out     => Sum_Out,
         Carry_Out   => Carry_Out,
         Reset       => Reset,
@@ -97,52 +97,53 @@ begin
         -- carry an erster stelle, da es signifikanter ist
         -- Puls ist der Puls, bei dem das Ergebnis stabil im Register liegt
         
-        -- Erster Test: 12 | (0,0,0) -> (0,0)
-        Carry_In    <= '0';
-        Pin1        <= '0';
-        Pin2        <= '0';
-        wait for clk_period*2;
-        
-        -- Zweiter Test: 14 | (0,1,0) -> (0, 1) 
-        Carry_In    <= '0';
-        Pin1        <= '1';
-        Pin2        <= '0';
-        wait for clk_period*2;
-        -- Dritter Test: 16 | (0,0,1) -> (0, 1)
+        -- Erster Test: 10 | (0,0,0) -> (0,0)
         Carry_In    <= '0';
         Pin1        <= '0';
         Pin2        <= '1';
         wait for clk_period*2;
         
-        -- Vierter Test: 18 | (0,1,1) -> (1, 0)
+        -- Zweiter Test: 12 | (0,1,0) -> (0, 1) 
+        Carry_In    <= '0';
+        Pin1        <= '1';
+        Pin2        <= '0';
+        wait for clk_period*2;
+        -- Dritter Test: 14 | (0,0,1) -> (0, 1)
+        Carry_In    <= '0';
+        Pin1        <= '0';
+        Pin2        <= '1';
+        wait for clk_period*2;
+        
+        -- Vierter Test: 16 | (0,1,1) -> (1, 0)
         -- Der erste Test, bei dem Carry_Out High sein sollte!
         Carry_In    <= '0';
         Pin1        <= '1';
         Pin2        <= '1';
         wait for clk_period*2;
         
-        -- Fünfter: 20 | (1,0,0) -> (0,1)
+        
+        -- Fünfter: 18 | (1,0,0) -> (0,1)
         -- Erster Test, bei dem Carry_In high sein wird! 
         -- Carry wird ab jetzt immer high sein
-        Carry_IN    <= '1'; -- wichtig!
+        Carry_In    <= '1'; --wichtig
         Pin1        <= '0';
         Pin2        <= '0';
         wait for clk_period*2;
         
-        -- Sechster Test: 22 | (1,1,0) -> (1, 0) 
-        Carry_IN    <= '1'; -- wichtig!
+        -- Sechster Test: 20 | (1,1,0) -> (1, 0) 
+        Carry_In    <= '1'; 
         Pin1        <= '1';
         Pin2        <= '0';
         wait for clk_period*2;
-        -- Siebter Test: 24 | (1,0,1) -> (1, 0)
-        Carry_IN    <= '1'; -- wichtig!
+        -- Siebter Test: 22 | (1,0,1) -> (1, 0)
+        Carry_In    <= '1'; 
         Pin1        <= '0';
         Pin2        <= '1';
         wait for clk_period*2;
         
-        -- Achter Test: 26 | (1,1,1) -> (1, 1)
+        -- Achter Test: 24 | (1,1,1) -> (1, 1)
         -- Der einzige Test, bei dem alle Outputs High sein sollten
-        Carry_IN    <= '1'; -- wichtig!
+        Carry_In    <= '1'; 
         Pin1        <= '1';
         Pin2        <= '1';
         

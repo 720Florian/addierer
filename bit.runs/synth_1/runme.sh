@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log One_Bit_Adder_Arch.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source One_Bit_Adder_Arch.tcl
+EAStep vivado -log Four_Bit_Adder_Arch.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Four_Bit_Adder_Arch.tcl
