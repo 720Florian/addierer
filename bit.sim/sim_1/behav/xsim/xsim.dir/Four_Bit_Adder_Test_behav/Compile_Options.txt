@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "Four_Bit_Adder_Test_behav" "xil_defaultlib.Four_Bit_Adder_Test" -log "elaborate.log" 
