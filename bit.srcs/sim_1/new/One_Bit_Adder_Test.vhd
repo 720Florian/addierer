@@ -101,25 +101,25 @@ begin
         Carry_In    <= '0';
         Pin1        <= '0';
         Pin2        <= '0';
-        wait for clk_period*3;
+        wait for clk_period*4;
         
         -- Zweiter Test: 12 | (0,1,0) -> (0, 1) 
         Carry_In    <= '0';
         Pin1        <= '1';
         Pin2        <= '0';
-        wait for clk_period*3;
+        wait for clk_period*4;
         -- Dritter Test: 14 | (0,0,1) -> (0, 1)
         Carry_In    <= '0';
         Pin1        <= '0';
         Pin2        <= '1';
-        wait for clk_period*3;
+        wait for clk_period*4;
         
         -- Vierter Test: 16 | (0,1,1) -> (1, 0)
         -- Der erste Test, bei dem Carry_Out High sein sollte!
         Carry_In    <= '0';
         Pin1        <= '1';
         Pin2        <= '1';
-        wait for clk_period*3;
+        wait for clk_period*4;
         
         
         -- Fünfter: 18 | (1,0,0) -> (0,1)
@@ -128,18 +128,18 @@ begin
         Carry_In    <= '1'; --wichtig
         Pin1        <= '0';
         Pin2        <= '0';
-        wait for clk_period*3;
+        wait for clk_period*4;
         
         -- Sechster Test: 20 | (1,1,0) -> (1, 0) 
         Carry_In    <= '1'; 
         Pin1        <= '1';
         Pin2        <= '0';
-        wait for clk_period*3;
+        wait for clk_period*4;
         -- Siebter Test: 22 | (1,0,1) -> (1, 0)
         Carry_In    <= '1'; 
         Pin1        <= '0';
         Pin2        <= '1';
-        wait for clk_period*3;
+        wait for clk_period*4;
         
         -- Achter Test: 24 | (1,1,1) -> (1, 1)
         -- Der einzige Test, bei dem alle Outputs High sein sollten

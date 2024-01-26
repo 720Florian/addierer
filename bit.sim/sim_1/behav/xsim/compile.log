@@ -1,4 +1,2 @@
 INFO: [VRFC 10-163] Analyzing VHDL file "D:/vhdl/bit/bit.srcs/sources_1/new/1_Bit_Adder_Arch.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'One_Bit_Adder_Arch'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/vhdl/bit/bit.srcs/sim_1/new/One_Bit_Adder_Test.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'One_Bit_Adder_Test'

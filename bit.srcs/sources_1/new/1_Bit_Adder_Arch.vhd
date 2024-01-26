@@ -71,7 +71,7 @@ architecture Behavioral of One_Bit_Adder_Arch is
             Pin1_And2_Buffer <= Pin1;
             Pin2_And2_Buffer <= Pin2;
             -- Ergebnis Puffer
-            Xor_Result_Buffer <= S1_xor XOR Carry_In;
+            Xor_Result_Buffer <= S1_xor XOR Carry_In_And1_Buffer;
 
             -- erste logik
             S1_xor <= Pin1 XOR Pin2;
