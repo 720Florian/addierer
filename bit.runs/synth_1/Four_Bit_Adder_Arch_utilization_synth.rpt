@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
-| Date         : Fri Jan 26 11:17:09 2024
-| Host         : DESKTOP-8K4SORE running 64-bit major release  (build 9200)
+| Date         : Fri Jan 26 11:42:13 2024
+| Host         : DESKTOP-HP8S7BO running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Four_Bit_Adder_Arch_utilization_synth.rpt -pb Four_Bit_Adder_Arch_utilization_synth.pb
 | Design       : Four_Bit_Adder_Arch
 | Device       : xc7k70tfbv676-1

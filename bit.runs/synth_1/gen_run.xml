@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1706264138" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/One_Bit_Adder_Arch.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1706265676" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/One_Bit_Adder_Arch.dcp">
   <File Type="PA-TCL" Name="Four_Bit_Adder_Arch.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="Four_Bit_Adder_Arch_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Four_Bit_Adder_Arch_reports.tcl"/>
   <File Type="RDS-RDS" Name="Four_Bit_Adder_Arch.vds"/>
   <File Type="RDS-UTIL" Name="Four_Bit_Adder_Arch_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="Four_Bit_Adder_Arch_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="Four_Bit_Adder_Arch.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="Four_Bit_Adder_Arch_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="Four_Bit_Adder_Arch_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/1_Bit_Adder_Arch.vhd">

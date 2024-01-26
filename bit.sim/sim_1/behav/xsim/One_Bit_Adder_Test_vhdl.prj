@@ -1,8 +1,7 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
 "../../../../bit.srcs/sources_1/new/1_Bit_Adder_Arch.vhd" \
-"../../../../bit.srcs/sources_1/new/4_Bit_Adder_Arch.vhd" \
-"../../../../bit.srcs/sim_1/new/Four_Bit_Adder_Test.vhd" \
+"../../../../bit.srcs/sim_1/new/One_Bit_Adder_Test.vhd" \
 
 # Do not sort compile order
 nosort
