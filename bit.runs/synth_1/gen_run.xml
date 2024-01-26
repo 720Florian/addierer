@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1703846709" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/One_Bit_Adder_Arch.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1706264138" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/One_Bit_Adder_Arch.dcp">
   <File Type="PA-TCL" Name="Four_Bit_Adder_Arch.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Four_Bit_Adder_Arch_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Four_Bit_Adder_Arch_reports.tcl"/>

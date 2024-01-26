@@ -39,6 +39,12 @@ architecture Behavioral of One_Bit_Adder_Arch is
     signal S1_xor : STD_LOGIC;
     signal S2_and1 : STD_LOGIC;
     signal S3_and2 : STD_LOGIC;
+    
+    -- Synchronisierungspuffer
+    signal Carry_In_And1_Buffer : STD_LOGIC;
+    signal Pin1_And2_Buffer : STD_LOGIC;
+    signal Pin2_And2_Buffer : STD_LOGIC;
+    signal Xor_Result_Buffer : STD_LOGIC;
 
     begin -- architecture
     
@@ -51,18 +57,29 @@ architecture Behavioral of One_Bit_Adder_Arch is
             S1_xor <= '0';
             S2_and1 <= '0';
             S3_and2 <= '0';
+            Carry_In_And1_Buffer <= '0';
+            Pin1_And2_Buffer <= '0';
+            Pin2_And2_Buffer <= '0';
+            Xor_Result_Buffer <= '0';
             -- ausgaenge auf 0
             Sum_Out <= '0';
             Carry_Out <= '0';
             
         elsif rising_edge(Clk) then
+            -- erste Puffer Schicht
+            Carry_In_And1_Buffer <= Carry_In;
+            Pin1_And2_Buffer <= Pin1;
+            Pin2_And2_Buffer <= Pin2;
+            -- Ergebnis Puffer
+            Xor_Result_Buffer <= S1_xor XOR Carry_In;
+
             -- erste logik
             S1_xor <= Pin1 XOR Pin2;
-            S2_and1 <= S1_xor AND Carry_In;
-            S3_and2 <= Pin1 AND Pin2;
+            S2_and1 <= S1_xor AND Carry_In_And1_Buffer;
+            S3_and2 <= Pin1_And2_Buffer AND Pin2_And2_Buffer;
             
             -- Ausgangs Logik
-            Sum_Out <= S1_xor XOR Carry_In;
+            Sum_Out <= Xor_Result_Buffer;
             Carry_Out <= S2_and1 OR S3_and2;
         end if; 
     end process P1;

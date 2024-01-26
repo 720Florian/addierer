@@ -11,24 +11,17 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="24.053 ns"></ZoomEndTime>
-      <Cursor1Time time="11.500 ns"></Cursor1Time>
+      <ZoomEndTime time="40.989 ns"></ZoomEndTime>
+      <Cursor1Time time="14.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="119"></NameColumnWidth>
-      <ValueColumnWidth column_width="61"></ValueColumnWidth>
+      <NameColumnWidth column_width="114"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="8" />
    <wave_markers>
-      <marker time="11500" label="" />
-      <marker time="13500" label="" />
-      <marker time="15500" label="" />
-      <marker time="17500" label="" />
-      <marker time="19500" label="" />
-      <marker time="21500" label="" />
-      <marker time="23500" label="" />
-      <marker time="25580" label="" />
-      <marker time="9500" label="" />
+      <marker time="8000" label="" />
+      <marker time="11000" label="" />
    </wave_markers>
    <wvobject fp_name="/One_Bit_Adder_Test/Pin1" type="logic">
       <obj_property name="ElementShortName">Pin1</obj_property>
@@ -38,9 +31,9 @@
       <obj_property name="ElementShortName">Pin2</obj_property>
       <obj_property name="ObjectShortName">Pin2</obj_property>
    </wvobject>
-   <wvobject fp_name="/One_Bit_Adder_Test/Carry_IN" type="logic">
-      <obj_property name="ElementShortName">Carry_IN</obj_property>
-      <obj_property name="ObjectShortName">Carry_IN</obj_property>
+   <wvobject fp_name="/One_Bit_Adder_Test/Carry_In" type="logic">
+      <obj_property name="ElementShortName">Carry_In</obj_property>
+      <obj_property name="ObjectShortName">Carry_In</obj_property>
    </wvobject>
    <wvobject fp_name="/One_Bit_Adder_Test/Reset" type="logic">
       <obj_property name="ElementShortName">Reset</obj_property>

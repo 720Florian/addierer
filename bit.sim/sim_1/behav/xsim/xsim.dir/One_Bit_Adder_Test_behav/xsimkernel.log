@@ -1,4 +1,7 @@
-Running: xsim.dir/One_Bit_Adder_Test_behav/xsimk.exe -simmode gui -wdb One_Bit_Adder_Test_behav.wdb -simrunnum 0 -socket 50884
+Running: xsim.dir/One_Bit_Adder_Test_behav/xsimk.exe -simmode gui -wdb One_Bit_Adder_Test_behav.wdb -simrunnum 0 -socket 56027
 Design successfully loaded
-Design Loading Memory Usage: 7180 KB (Peak: 7180 KB)
-Design Loading CPU Usage: 30 ms
+Design Loading Memory Usage: 7420 KB (Peak: 7420 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 7948 KB (Peak: 7948 KB)
+Simulation CPU Usage: 46 ms
